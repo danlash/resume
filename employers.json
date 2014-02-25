@@ -1,0 +1,50 @@
+
+[
+  {
+    "name"  :     "VersionOne",
+    "start" :     "2010-04-01",
+    "end" :       "2014-04-01",
+    "location"  : "Atlanta, GA",
+    "growth"  :   4,
+    "happiness" : 5
+  },
+  {
+    "name"  :     "BGM Collaboration / GreenStone",
+    "start" :     "",
+    "end" :       "2010-04-01",
+    "location"  : "East Lansing, MI",
+    "growth"  :   2,
+    "happiness" : 3
+  },
+  {
+    "name"  :     "Artemis Solutions Group",
+    "start" :     "",
+    "end" :       "",
+    "location"  : "East Lansing, MI",
+    "growth"  :   3,
+    "happiness" : 1
+  },
+  {
+    "name"  :     "MATRIX",
+    "start" :     "",
+    "end" :       "",
+    "location"  : "East Lansing, MI",
+    "growth"  :   4,
+    "happiness" : 5
+  },
+  {
+    "name"  :     "StockAlerts.com",
+    "start" :     "",
+    "end" :       "",
+    "location"  : "Okemos, MI",
+    "growth"  :   4,
+    "happiness" : 4
+  },
+  {
+    "name"  :     "Analysts International",
+    "start" :     "",
+    "end" :       "",
+    "location"  : "East Lansing, MI",
+    "growth"  :   4,
+    "happiness" : 2
+  },

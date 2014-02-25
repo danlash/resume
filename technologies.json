@@ -1,0 +1,62 @@
+[
+  {
+    "name"   :      "C#",
+    "type"  :       "language",
+    "proficiency" : 5,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "JavaScript",
+    "type"  :       "language",
+    "proficiency" : 5,
+    "affinity"  :   5
+  },
+  {
+    "name"  :       "HTML",
+    "type"  :       "language",
+    "proficiency" : 4,
+    "affinity"  :   4
+  },
+  {
+    "name"  :       "CSS",
+    "type"  :       "language",
+    "proficiency" : 4,
+    "affinity"  :   4
+  },
+  {
+    "name"  :       "LESS",
+    "type"  :       "language",
+    "proficiency" : 4,
+    "affinity"  :   5
+  },
+  {
+    "name"  :       "ASP.NET",
+    "type"  :       "framework",
+    "proficiency" : 4,
+    "affinity"  :   2
+  },
+  {
+    "name"  :       "ASP.NET MVC",
+    "type"  :       "framework",
+    "proficiency" : 4,
+    "affinity"  :   5
+  },
+  {
+    "name"  :       "jQuery",
+    "type"  :       "framework",
+    "proficiency" : 5,
+    "affinity"  :   4
+  },
+  {
+    "name"  :       "Backbone.js",
+    "type"  :       "framework",
+    "proficiency" : 4,
+    "affinity"  :   5
+  },
+  {
+    "name"  :       "Node.js",
+    "type"  :       "platform",
+    "proficiency" : 4,
+    "affinity"  :   5
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "name"  : "Github",
+    "url" :   "https://www.github.com/danlash"
+  }
+
+  {
+    "name"  : "LinkedIn",
+    "url" :   "https://www.linkedin.com/danlash"
+  }
+
+  {
+    "name"  : "StackOverflow",
+    "url" :   "https://www.stackoverflow.com/danlash"
+  }
+]
