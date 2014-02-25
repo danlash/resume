@@ -1,3 +1,4 @@
+
 {
   "name": "resume",
   "description": "A resume site generator",
@@ -6,8 +7,6 @@
   "license": "MIT",
   "dependencies": {
     "handlebars": "~2.0.0-alpha.1",
-    "less": "~1.6.3",
-    "uglifyjs": "~2.3.6",
-    "uglify-js": "~2.4.12"
+    "less": "~1.6.3"
   }
 }
