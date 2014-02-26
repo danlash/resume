@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Dan Lash's Resume</title>
-    <meta name="description" content="The resume of Dan Lash">
+    <title>{{bio.first}} {{bio.last}}'s Resume</title>
+    <meta name="description" content="The resume of {{bio.first}} {{bio.last}}">
     <meta name="viewport" content="width=device-width">
     <style>{{> css}}</style>
   </head>
@@ -12,100 +12,71 @@
     
     <header>
         <address class="vcard">
-          <h1 class="fn">Dan Lash</h1>
-          <a class="email" href="mailto:danlash@gmail.com">danlash@gmail.com</a>
+          <h1 class="fn">{{bio.first}} {{bio.last}}</h1>
           <div class="adr">
-            <div class="street-address">897 N Highland AVE NE APT BT2</div>
-            <span class="locality">Atlanta</span>, 
-            <span class="region">GA</span>, 
-            <span class="postal-code">30306</span>
-
+            <div class="street-address">{{bio.address}}</div>,
+            <span class="locality">{{bio.city}}</span>, 
+            <span class="region">{{bio.state}}</span>, 
+            <span class="postal-code">{{bio.zip}}</span>
           </div>
+          <a class="email" href="mailto:{{bio.email}}">{{bio.email}}</a>
         </address>
     </header>
 
-    <nav>
-      <a href="index.html">Traditional</a>
-      <a href="graphs.html">Graphs</a>
-      <a href="timeline.html">Timeline</a>
-      <a href="map.html">Map</a>
-      <a href="data.html">Data</a>
-    </nav>
+    {{> nav}}
 
     <main>
-      <section class="technologies">
-        <h3>Technologies</h3>
-        <ul>
 
-          {{#each technologies}}
-            <li class="{{type}}" data-start-date="{{start}}" date-end-date="{{end}}">
-              <span class="name">{{name}}</span>
-              <span class="proficiency">{{bar proficiency}}</span>
-              <span class="affinity">{{bar affinity}}</span>
+      <section class="summary">
+        <h3>Summary</h3>
+        <span class="body">{{bio.summary}}</span>
+      </section>
+
+      <section class="skills">
+        <h3>Skills</h3>
+        <ul class="types">
+
+          {{#each technologyGroups}}
+            <li class="type">
+              <h4 class="name">{{type}}</h4>:
+
+              <ul class="technologies">
+              {{#each technologies}}
+                <li class="technology">
+                  {{name}}{{#unless @last}},{{/unless}}
+                </li>
+              {{/each}}
+              </ul>
+
             </li>
           {{/each}}
           
         </ul>
       </section>
 
-      <section class="projects">
-        <h3>Projects</h3>
-        <ul>
-          <li data-start-date="2010-04-01" data-end-date-"2014-04-01">
-            <span class="name">VersionOne</span>
-            <span class="size">####</span>
-            <span class="influence">###</span>
-          </li>
-        </ul>
-      </section>
 
-      <section class="employers">
-        <h3>Employers</h3>
-        <ul>    
-          <li data-start-date="2010-04-01" data-end-date="2014-04-01">
-            <span class="name">VersionOne</span>
-            <span class="location">Atlanta, GA</span>
-            <span class="growth">####</span>
-            <span class="happiness">#####</span>
-          </li>
-        </ul>
-      </section>
+      <section class="experience">
+        <h3>Experience</h3>
+        <ul class="employers">
+          {{#each employers}}
+          <li class="employer">
+            <span class="name">{{name}}</span>
+            <span class="period">{{start}} - {{end}}</span>
+            <span class="location">{{location}}</span>
+            <span class="title">{{title}}</span>
 
-      <section class="degress">
-        <h3>Degrees</h3>
-        <ul>    
-          <li data-start-date="1998-08-01" date-end-date="2002-06-01">
-            <span class="type">Diploma</span>
-            <span class="concentration">Computer Programming</span>
-            <span class="issued-by">Holt High School</span>
-            <span class="location">Holt, MI</span>
-            <span class="grade">3.3 / 4.0</grade>
+            <ul class="highlights">
+            {{#each highlights}}
+              <li>
+                {{this}}
+              </li>
+            {{/each}}
+            </ul>
           </li>
+          {{/each}}
         </ul>
-      </section>
-
-      <section class="profiles">
-        <h3>Profiles</h3>
-        <ul>
-          <li>
-            <span class="name">Github</span>
-            <span class="url">https://www.github.com/danlash</span>
-          </li>
-        </ul>
-      </section>
-
-      <section class="interests">
-        <h3>Interests</h3>
-        <ul>
-          <li>Agile / Lean</li>
-        </ul>
-      </section>
     </main>
 
-    <footer>
-      Grab a PDF copy of this resume!
-    </footer>
-    
 
     <script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

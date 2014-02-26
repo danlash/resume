@@ -1,0 +1,10 @@
+{
+  "first"   : "Dan",
+  "last"    : "Lash",
+  "email"   : "danlash@gmail.com",
+  "address" : "897 N Highland AVE NE APT BT2",
+  "city"    : "Atlanta",
+  "state"   : "Georgia",
+  "zip"     : 30306,
+  "summary" : "A software developer!"
+}

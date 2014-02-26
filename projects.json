@@ -5,6 +5,7 @@
     "start" :         "2010-04-01",
     "end" :           "2014-04-01",
     "technologies" :  ["C#", "ASP.NET", "ASP.NET MVC", "JavaScript", "jQuery", "Backbone.js", "Node.js", "HTML", "CSS", "LESS"],
+    "highlights"  :   ["did some stuff", "agile all the way"],
     "size":           4,
     "influence" :     3
   },
@@ -14,6 +15,7 @@
     "start" :         "2010-08-01",
     "end" :           "2010-12-01",
     "technologies" :  ["C#", "Spark", "jQuery", "LESS", "Ruby"],
+    "highlights"  :   [],
     "size":           3,
     "influence" :     4
   },
@@ -23,6 +25,7 @@
     "start" :         "",
     "end" :           "",
     "technologies" :  ["C#", "JavaScript", "Sammy.js"],
+    "highlights"  :   [],
     "size":           3,
     "influence" :     4
   },
@@ -33,6 +36,7 @@
     "start" :         "",
     "end" :           "",
     "technologies" :  ["C#", "JavaScript", "Socket.io"],
+    "highlights"  :   [],
     "size":           1,
     "influence" :     4
   },
@@ -43,6 +47,7 @@
     "start" :         "",
     "end" :           "",
     "technologies" :  ["C#", "HTML", "JavaScript"],
+    "highlights"  :   [],
     "size":           2,
     "influence" :     5
   },
@@ -52,6 +57,7 @@
     "start" :         "",
     "end" :           "",
     "technologies" :  ["Node.js", "JavaScript", "Express.js", "jQuery"],
+    "highlights"  :   [],
     "size":           3,
     "influence" :     5
   },
@@ -61,6 +67,7 @@
     "start" :         "",
     "end" :           "",
     "technologies" :  ["Node.js", "JavaScript", "RabbitMQ"],
+    "highlights"  :   [],
     "size":           1,
     "influence" :     5
   }
