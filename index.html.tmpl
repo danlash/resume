@@ -25,11 +25,11 @@
     </header>
 
     <nav>
-      <a href="">Traditional</a>
-      <a href="">Graphs</a>
-      <a href="">Timeline</a>
-      <a href="">Map</a>
-      <a href="">Data</a>
+      <a href="index.html">Traditional</a>
+      <a href="graphs.html">Graphs</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="map.html">Map</a>
+      <a href="data.html">Data</a>
     </nav>
 
     <main>
@@ -37,11 +37,14 @@
         <h3>Technologies</h3>
         <ul>
 
-          <li class="language" data-start-date="" date-end-date="">
-            <span class="name">C#</span>
-            <span class="proficiency">#####</span>
-            <span class="affinity">###</span>
-          </li>
+          {{#each technologies}}
+            <li class="{{type}}" data-start-date="{{start}}" date-end-date="{{end}}">
+              <span class="name">{{name}}</span>
+              <span class="proficiency">{{bar proficiency}}</span>
+              <span class="affinity">{{bar affinity}}</span>
+            </li>
+          {{/each}}
+          
         </ul>
       </section>
 
