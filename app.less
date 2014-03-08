@@ -70,7 +70,7 @@ h3 {
   }
 
   .technologies {
-    margin-left: 1em;
+    margin-left: 1ex;
   }
 }
 
@@ -85,25 +85,59 @@ h3 {
     position: relative;
     margin-bottom: 1em;
 
-    .name {
+    .title {
       display: block;
       font-style: italic;
+      font-weight: bold;
     }
 
-    .location, .title, .period {
+    .location, .name, .period {
       font-size: 0.9em;
     }
 
-    .period, .title {
+    .period, .location {
       position: absolute;
       right: 0;
     }
 
     .period { top: 0; }
-    .title { top: 1em; }
+    .location { top: 1em; }
 
     .highlights {
       list-style-type: disc;
     }
+  }
+}
+
+.education {
+  .degrees {
+    margin-left: @indent-margin;
+    list-style: none;
+    padding: 0;
+  }
+
+  .degree {
+    position: relative;
+    margin-bottom: 1em;
+
+    .type {
+      display: block;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .issuer { display: block; }
+
+    .issuer, .location, .period {
+      font-size: 0.9em;
+    }
+
+    .period, .location {
+      position: absolute;
+      right: 0;
+    }
+
+    .period { top: 0; }
+    .location { top: 1em; }
   }
 }

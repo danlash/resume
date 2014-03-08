@@ -29,7 +29,7 @@
 
       <section class="summary">
         <h3>Summary</h3>
-        <span class="body">{{bio.summary}}</span>
+        <div class="body">{{bio.summary}}</div>
       </section>
 
       <section class="skills">
@@ -60,10 +60,10 @@
         <ul class="employers">
           {{#each employers}}
           <li class="employer">
+            <span class="title">{{title}}</span>
             <span class="name">{{name}}</span>
             <span class="period">{{start}} - {{end}}</span>
             <span class="location">{{location}}</span>
-            <span class="title">{{title}}</span>
 
             <ul class="highlights">
             {{#each highlights}}
@@ -75,6 +75,22 @@
           </li>
           {{/each}}
         </ul>
+      </section>
+
+
+      <section class="education">
+        <h3>Education</h3>
+        <ul class="degrees">
+          {{#each degrees}}
+            <li class="degree">
+              <span class="type">{{type}}: {{concentration}}</span>
+              <span class="issuer">{{issued-by}}</span>
+              <span class="location">{{location}}</span>
+              <span class="period">{{start}} - {{end}}</span>
+            </li>
+          {{/each}}
+        </ul>
+      </section>
     </main>
 
 
