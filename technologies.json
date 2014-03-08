@@ -43,7 +43,7 @@
   },
   {
     "name"  :       "jQuery",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 5,
     "affinity"  :   4
   },
@@ -58,5 +58,267 @@
     "type"  :       "platform",
     "proficiency" : 4,
     "affinity"  :   5
+  },
+  {
+    "name"  :       "CoffeeScript",
+    "type"  :       "language",
+    "proficiency" : 2,
+    "affinity"  :   2
+  },
+  {
+    "name"  :       "Rake",
+    "type"  :       "framework",
+    "proficiency" : 3,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "Ruby",
+    "type"  :       "language",
+    "proficiency" : 3,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "Jenkins",
+    "type"  :       "tool",
+    "proficiency" : 4,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "Handlebars",
+    "type"  :       "library",
+    "proficiency" : 4,
+    "affinity"  :   5
+  },
+  {
+    "name"  :       "SQL Server",
+    "type"  :       "database",
+    "proficiency" : 4,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "MbUnit",
+    "type"  :       "framework",
+    "proficiency" : 4,
+    "affinity"  :   2
+  },
+  {
+    "name"  :       "Mocha",
+    "type"  :       "framework",
+    "proficiency" : 4,
+    "affinity"  :   5
+  },
+  {
+    "name"  :       "Chai",
+    "type"  :       "framework",
+    "proficiency" : 2,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "Visual Studio",
+    "type"  :       "tool",
+    "proficiency" : 5,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "Sublime Text",
+    "type"  :       "tool",
+    "proficiency" : 4,
+    "affinity"  :   5
+  },
+  {
+    "name"  :       "Git",
+    "type"  :       "tool",
+    "proficiency" : 4,
+    "affinity"  :   5
+  },
+  {
+    "name"  :       "Rhino Mocks",
+    "type"  :       "framework",
+    "proficiency" : 3,
+    "affinity"  :   2
+  },
+  {
+    "name"  :       "HipChat",
+    "type"  :       "tool",
+    "proficiency" : 5,
+    "affinity"  :   4
+  },
+  {
+    "name"  :       "XML",
+    "type"  :       "language",
+    "proficiency" : 3,
+    "affinity"  :   1
+  },
+  {
+    "name"  :       "Confluence",
+    "type"  :       "tool",
+    "proficiency" : 3,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "Github",
+    "type"  :       "tool",
+    "proficiency" : 4,
+    "affinity"  :   5
+  },
+  {
+    "name"  :       "Spark",
+    "type"  :       "language",
+    "proficiency" : 5,
+    "affinity"  :   4
+  },
+  {
+    "name"  :       "Sammy.js",
+    "type"  :       "framework",
+    "proficiency" : 3,
+    "affinity"  :   1
+  },
+  {
+    "name"  :       "jQuery Templates",
+    "type"  :       "framework",
+    "proficiency" : 3,
+    "affinity"  :   1
+  },
+  {
+    "name"  :       "Socket.io",
+    "type"  :       "library",
+    "proficiency" : 2,
+    "affinity"  :   4
+  },
+  {
+    "name"  :       "Salesforce",
+    "type"  :       "integration",
+    "proficiency" : 1,
+    "affinity"  :   0
+  },
+  {
+    "name"  :       "iisnode",
+    "type"  :       "tool",
+    "proficiency" : 2,
+    "affinity"  :   2
+  },
+  {
+    "name"  :       "RabbitMQ",
+    "type"  :       "tool",
+    "proficiency" : 1,
+    "affinity"  :   4
+  },
+  {
+    "name"  :       "Wit",
+    "type"  :       "tool",
+    "proficiency" : 2,
+    "affinity"  :   4
+  },
+  {
+    "name"  :       "Express.js",
+    "type"  :       "framework",
+    "proficiency" : 3,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "LAB.js",
+    "type"  :       "library",
+    "proficiency" : 2,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "Custom MVP",
+    "type"  :       "framework",
+    "proficiency" : 5,
+    "affinity"  :   2
+  },
+  {
+    "name"  :       "Microsoft CRM",
+    "type"  :       "integration",
+    "proficiency" : 4,
+    "affinity"  :   3
+  },  {
+    "name"  :       "TFS",
+    "type"  :       "tool",
+    "proficiency" : 3,
+    "affinity"  :   1
+  },
+  {
+    "name"  :       "XAML",
+    "type"  :       "language",
+    "proficiency" : 1,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "WPF",
+    "type"  :       "framework",
+    "proficiency" : 1,
+    "affinity"  :   1
+  },
+    {
+    "name"  :       "Windows Forms",
+    "type"  :       "framework",
+    "proficiency" : 3,
+    "affinity"  :   0
+  },
+  {
+    "name"  :       "Oracle",
+    "type"  :       "database",
+    "proficiency" : 1,
+    "affinity"  :   1
+  },
+  {
+    "name"  :       "Outlook",
+    "type"  :       "integration",
+    "proficiency" : 3,
+    "affinity"  :   2
+  },
+  {
+    "name"  :       "DNN",
+    "type"  :       "framework",
+    "proficiency" : 3,
+    "affinity"  :   1
+  },
+  {
+    "name"  :       "PHP",
+    "type"  :       "language",
+    "proficiency" : 3,
+    "affinity"  :   2
+  },
+  {
+    "name"  :       "Bowker",
+    "type"  :       "integration",
+    "proficiency" : 3,
+    "affinity"  :   2
+  },
+  {
+    "name"  :       "Barcode Scanner",
+    "type"  :       "tool",
+    "proficiency" : 4,
+    "affinity"  :   5
+  },
+  {
+    "name"  :       "MySQL",
+    "type"  :       "database",
+    "proficiency" : 3,
+    "affinity"  :   2
+  },  {
+    "name"  :       "Jasmine",
+    "type"  :       "framework",
+    "proficiency" : 4,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "vBulletin",
+    "type"  :       "integration",
+    "proficiency" : 2,
+    "affinity"  :   1
+  },
+  {
+    "name"  :       "Python",
+    "type"  :       "language",
+    "proficiency" : 2,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "WebKit",
+    "type"  :       "framework",
+    "proficiency" : 1,
+    "affinity"  :   1
   }
 ]

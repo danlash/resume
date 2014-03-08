@@ -4,8 +4,8 @@
     "employer" :      "VersionOne",
     "start" :         "2010-04-01",
     "end" :           "2014-04-01",
-    "technologies" :  ["C#", "ASP.NET", "ASP.NET MVC", "JavaScript", "jQuery", "Backbone.js", "Node.js", "HTML", "CSS", "LESS"],
-    "highlights"  :   ["did some stuff", "agile all the way"],
+    "technologies" :  ["C#", "ASP.NET", "ASP.NET MVC", "JavaScript", "jQuery", "Backbone.js", "Node.js", "HTML", "CSS", "LESS", "CoffeeScript", "Rake", "Ruby", "Jenkins", "Handlebars", "SQL Server", "MbUnit", "Mocha", "Chai", "Visual Studio", "Sublime Text", "Git", "Rhino Mocks", "HipChat", "XML", "Confluence", "Github"],
+    "highlights"  :   [],
     "size":           4,
     "influence" :     3
   },
@@ -14,7 +14,7 @@
     "employer" :      "VersionOne",
     "start" :         "2010-08-01",
     "end" :           "2010-12-01",
-    "technologies" :  ["C#", "Spark", "jQuery", "LESS", "Ruby"],
+    "technologies" :  ["C#", "Spark", "jQuery", "LESS", "Ruby", "Rake", "JavaScript", "Github", "Visual Studio", "Rhino Mocks", "MbUnit", "Jasmine"],
     "highlights"  :   [],
     "size":           3,
     "influence" :     4
@@ -24,7 +24,7 @@
     "employer" :      "VersionOne",
     "start" :         "",
     "end" :           "",
-    "technologies" :  ["C#", "JavaScript", "Sammy.js"],
+    "technologies" :  ["C#", "ASP.NET MVC", "JavaScript", "Sammy.js", "HTML", "CSS", "LESS", "jQuery Templates", "Git", "Github", "Visual Studio"],
     "highlights"  :   [],
     "size":           3,
     "influence" :     4
@@ -35,7 +35,7 @@
     "url" :           "https://www.github.com/versionone/boardello",
     "start" :         "",
     "end" :           "",
-    "technologies" :  ["C#", "JavaScript", "Socket.io"],
+    "technologies" :  ["C#", "JavaScript", "Socket.io", "HTML", "CSS", "Git", "Github", "Sublime Text"],
     "highlights"  :   [],
     "size":           1,
     "influence" :     4
@@ -46,7 +46,7 @@
     "url" :           "https://www.github.com/versionone/team-room-plugins",
     "start" :         "",
     "end" :           "",
-    "technologies" :  ["C#", "HTML", "JavaScript"],
+    "technologies" :  ["C#", "HTML", "JavaScript", "Git", "HipChat", "Github", "Sublime Text"],
     "highlights"  :   [],
     "size":           2,
     "influence" :     5
@@ -56,7 +56,7 @@
     "employer" :      "VersionOne",
     "start" :         "",
     "end" :           "",
-    "technologies" :  ["Node.js", "JavaScript", "Express.js", "jQuery"],
+    "technologies" :  ["Node.js", "JavaScript", "Express.js", "jQuery",  "Git", "HipChat", "Github", "Sublime Text", "Salesforce", "iisnode"],
     "highlights"  :   [],
     "size":           3,
     "influence" :     5
@@ -66,9 +66,149 @@
     "employer" :      "VersionOne",
     "start" :         "",
     "end" :           "",
-    "technologies" :  ["Node.js", "JavaScript", "RabbitMQ"],
+    "technologies" :  ["Node.js", "JavaScript", "RabbitMQ", "Sublime Text", "Wit"],
     "highlights"  :   [],
     "size":           1,
     "influence" :     5
+  },
+  {
+    "name" :          "vTV",
+    "employer" :      "VersionOne",
+    "start" :         "",
+    "end" :           "",
+    "technologies" :  ["LAB.js", "JavaScript", "jQuery"],
+    "highlights"  :   [],
+    "size":           1,
+    "influence" :     1
+  },
+  {
+    "name" :          "Conversion/Reprice",
+    "employer" :      "BGM Collaboration / GreenStone",
+    "start" :         "",
+    "end" :           "",
+    "technologies" :  [],
+    "highlights"  :   [],
+    "size":           3,
+    "influence" :     5
+  },
+  {
+    "name" :          "Loan Origination",
+    "employer" :      "BGM Collaboration / GreenStone",
+    "start" :         "",
+    "end" :           "",
+    "technologies" :  [],
+    "highlights"  :   [],
+    "size":           5,
+    "influence" :     2
+  },
+  {
+    "name" :          "Dealer Extranet",
+    "employer" :      "BGM Collaboration / GreenStone",
+    "start" :         "",
+    "end" :           "",
+    "technologies" :  ["Custom MVP", "Microsoft CRM"],
+    "highlights"  :   [],
+    "size":           3,
+    "influence" :     5
+  },
+  {
+    "name" :          "Time Collector?",
+    "employer" :      "BGM Collaboration / GreenStone",
+    "start" :         "",
+    "end" :           "",
+    "technologies" :  ["TFS", "XAML", "WPF"],
+    "highlights"  :   [],
+    "size":           3,
+    "influence" :     5
+  },
+  {
+    "name" :          "Certified Mail Thing",
+    "employer" :      "BGM Collaboration / GreenStone",
+    "start" :         "",
+    "end" :           "",
+    "technologies" :  ["Barcode Scanner"],
+    "highlights"  :   [],
+    "size":           2,
+    "influence" :     5
+  },
+  {
+    "name" :          "EMR",
+    "employer" :      "Artemis Solutions Group",
+    "start" :         "",
+    "end" :           "",
+    "technologies" :  ["Windows Forms"],
+    "highlights"  :   [],
+    "size":           4,
+    "influence" :     2
+  },
+  {
+    "name" :          "Relius Sync",
+    "employer" :      "Artemis Solutions Group",
+    "start" :         "",
+    "end" :           "",
+    "technologies" :  ["Oracle", "Outlook", "C#"],
+    "highlights"  :   [],
+    "size":           1,
+    "influence" :     5
+  },
+  {
+    "name" :          "Projects Module",
+    "employer" :      "Artemis Solutions Group",
+    "start" :         "",
+    "end" :           "",
+    "technologies" :  ["DNN"],
+    "highlights"  :   [],
+    "size":           2,
+    "influence" :     5
+  },
+  {
+    "name" :          "H-Net Reviews",
+    "employer" :      "MATRIX",
+    "start" :         "",
+    "end" :           "",
+    "technologies" :  ["PHP", "Bowker", "HTML", "Barcode Scanner"],
+    "highlights"  :   [],
+    "size":           4,
+    "influence" :     5
+  },
+  {
+    "name" :          "Farm Equipment Archive",
+    "employer" :      "BGM Collaboration / GreenStone",
+    "start" :         "",
+    "end" :           "",
+    "technologies" :  ["MySQL"],
+    "highlights"  :   [],
+    "size":           2,
+    "influence" :     4
+  },
+  {
+    "name" :          "StockAlerts",
+    "employer" :      "StockAlerts.com",
+    "start" :         "",
+    "end" :           "",
+    "technologies" :  ["MySQL", "Python"],
+    "highlights"  :   [],
+    "size":           4,
+    "influence" :     1
+  },
+  {
+    "name" :          "Forum",
+    "employer" :      "StockAlerts.com",
+    "start" :         "",
+    "end" :           "",
+    "technologies" :  ["MySQL", "vBulletin", "Python", "PHP"],
+    "highlights"  :   [],
+    "size":           2,
+    "influence" :     4
+  },
+  {
+    "name" :          "Customer Extranet",
+    "employer" :      "Analysts International",
+    "start" :         "",
+    "end" :           "",
+    "technologies" :  ["Python", "WebKit"],
+    "highlights"  :   [],
+    "size":           3,
+    "influence" :     0
   }
 ]
