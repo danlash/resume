@@ -1,0 +1,30 @@
+{
+  "name": "resume",
+  "description": "A generator for the resume of Dan Lash",
+  "main": "generate",
+  "devDependencies": {
+    "connect": "~2.13.1"
+  },
+  "dependencies": {
+    "handlebars": "~2.0.0-alpha.2",
+    "less": "~1.6.3",
+    "underscore": "~1.6.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "generate": "node generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/danlash/resume.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "Dan Lash",
+  "license": "CC BY",
+  "bugs": {
+    "url": "https://github.com/danlash/resume/issues"
+  },
+  "homepage": "https://github.com/danlash/resume"
+}
