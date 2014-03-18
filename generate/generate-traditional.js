@@ -2,19 +2,24 @@ var fs = require('fs');
 var less = require('less');
 var handlebars = require('handlebars');
 var _ = require('underscore');
+var path = require('path');
 
-var bio = require('./bio');
-var projects = require('./projects');
-var technologies = require('./technologies');
-var employers = require('./employers');
-var degrees = require('./degrees');
-var profiles = require('./profiles');
-var interests = require('./interests');
+var templatePath = function(file) { return path.join(__dirname, '../templates', file || ''); };
+var publicPath = function(file) { return path.join(__dirname, '../public', file || ''); };
+var dataPath = function(file)  { return path.join(__dirname, '../data', file || ''); };
 
-var lessSource = fs.readFileSync('./traditional.less').toString();
-var htmlSource = fs.readFileSync('./index.html.tmpl').toString();
+var bio = require(dataPath('bio.json'));
+var projects = require(dataPath('projects'));
+var technologies = require(dataPath('technologies'));
+var employers = require(dataPath('employers'));
+var degrees = require(dataPath('degrees'));
+var profiles = require(dataPath('profiles'));
+var interests = require(dataPath('interests'));
 
-handlebars.registerPartial('nav', fs.readFileSync('./nav.html.tmpl').toString());
+var lessSource = fs.readFileSync(templatePath('traditional.less')).toString();
+var htmlSource = fs.readFileSync(templatePath('index.html.tmpl')).toString();
+
+handlebars.registerPartial('nav', fs.readFileSync(templatePath('nav.html.tmpl')).toString());
 
 var technologyGroups = _.groupBy(technologies, function(technology){
   return technology.type;
@@ -67,8 +72,12 @@ function sortDescending(collection) {
 
 employers = sortDescending(employers);
 
-less.render(lessSource, {compress:true}, function (err, css) {
+
+var parser = new(less.Parser)({ paths: templatePath(), filename: 'graphs.less' });
+
+parser.parse(lessSource, function (err, tree) {
   if (err) throw err;
+  var css = tree.toCSS({compress: true});
 
   handlebars.registerPartial('css', css);
   var template = handlebars.compile(htmlSource);
@@ -85,5 +94,5 @@ less.render(lessSource, {compress:true}, function (err, css) {
 
   var result = template(data);
 
-  fs.writeFileSync('./index.html', result);
+  fs.writeFileSync(publicPath('index.html'), result);
 });
