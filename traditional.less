@@ -1,44 +1,10 @@
+@import "variables";
 @import "normalize";
+@import "nav";
+@import "vcard";
 
-@page-margin: 0.5em;
 @indent-margin: 1em; 
 
-body {
-  padding: @page-margin;  
-}
-
-nav {
-  position: fixed;
-  right: @page-margin;
-  top: @page-margin;
-  background-color: #eee;
-  border-radius: 10px;
-  padding: 1ex;
-  z-index: 1;
-
-}
-
-.vcard {
-  text-align: center;
-
-  .fn {
-    font-variant: small-caps;
-    margin: 0;
-  }
-
-  .adr {
-    display: inline; 
-
-    &::after {
-      content: '-';
-    }
-
-    > * {
-      display: inline-block;
-    }
-  }
-
-}
 
 h3 {
   font-variant: small-caps;

@@ -1,0 +1,27 @@
+@import "variables";
+
+body {
+  padding: @page-margin;  
+}
+
+.vcard {
+  text-align: center;
+
+  .fn {
+    font-variant: small-caps;
+    margin: 0;
+  }
+
+  .adr {
+    display: inline; 
+
+    &::after {
+      content: '-';
+    }
+
+    > * {
+      display: inline-block;
+    }
+  }
+
+}
