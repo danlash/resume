@@ -4,24 +4,28 @@ body {
   padding: @page-margin;  
 }
 
-.vcard {
-  text-align: center;
+header {
+  border-bottom: 1px dashed #ccc;
 
-  .fn {
-    font-variant: small-caps;
-    margin: 0;
-  }
+  .vcard {
+    text-align: center;
 
-  .adr {
-    display: inline; 
-
-    &::after {
-      content: '-';
+    .fn {
+      font-variant: small-caps;
+      margin: 0;
     }
 
-    > * {
-      display: inline-block;
-    }
-  }
+    .adr {
+      display: inline; 
 
+      &::after {
+        content: '-';
+      }
+
+      > * {
+        display: inline-block;
+      }
+    }
+
+  }
 }

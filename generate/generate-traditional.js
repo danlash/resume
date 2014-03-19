@@ -90,7 +90,8 @@ parser.parse(lessSource, function (err, tree) {
     technologyGroups: technologyGroups,
     employers: employers,
     degrees: degrees,
-    interests: interests
+    interests: interests,
+    profiles: profiles
   };
 
   var result = template(data);

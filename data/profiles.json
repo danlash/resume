@@ -1,14 +1,14 @@
 [
   {
     "name"  : "Github",
-    "url" :   "https://www.github.com/danlash"
+    "url" :   "https://github.com/danlash"
   },
   {
     "name"  : "LinkedIn",
-    "url" :   "https://www.linkedin.com/danlash"
+    "url" :   "https://www.linkedin.com/in/danlash"
   },
   {
     "name"  : "StackOverflow",
-    "url" :   "https://www.stackoverflow.com/danlash"
+    "url" :   "http://stackoverflow.com/users/13072/danlash"
   }
 ]
