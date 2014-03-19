@@ -70,6 +70,8 @@ function sortDescending(collection) {
 
 employers = sortDescending(employers);
 
+interests = _.pluck(interests, 'name').join(', ');
+
 
 var parser = new(less.Parser)({ paths: templatePath(), filename: 'graphs.less' });
 
@@ -87,7 +89,8 @@ parser.parse(lessSource, function (err, tree) {
     technologies: technologies,
     technologyGroups: technologyGroups,
     employers: employers,
-    degrees: degrees
+    degrees: degrees,
+    interests: interests
   };
 
   var result = template(data);

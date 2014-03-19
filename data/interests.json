@@ -1,6 +1,6 @@
 [
   {
-    "name"  : "Agile / Lean"
+    "name"  : "Agile / Lean Process"
   },
   {
     "name"  : "Functional Programming"
@@ -12,9 +12,12 @@
     "name"  : "Machine Learning"
   },
   {
-    "name"  : "Entreprenurealism"
+    "name"  : "Entrepreneurialism"
   },
   {
-    "name"  : "Single Page Apps"
+    "name"  : "JavaScript"
+  },
+  {
+    "name"  : "User Experience"
   }
 ]
