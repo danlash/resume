@@ -2,11 +2,9 @@ var fs = require('fs');
 var less = require('less');
 var handlebars = require('handlebars');
 var _ = require('underscore');
-var path = require('path');
 
-var templatePath = function(file) { return path.join(__dirname, '../templates', file || ''); };
-var publicPath = function(file) { return path.join(__dirname, '../public', file || ''); };
-var dataPath = function(file)  { return path.join(__dirname, '../data', file || ''); };
+var paths = require('./paths'), templatePath = paths.templatePath, publicPath = paths.publicPath, dataPath = paths.dataPath;
+
 
 var bio = require(dataPath('bio.json'));
 var projects = require(dataPath('projects'));

@@ -1,12 +1,9 @@
 var handlebars = require('handlebars');
 var less = require('less');
 var fs = require('fs');
-var path = require('path');
 var _ = require('underscore');
 
-var templatePath = function(file) { return path.join(__dirname, '../templates', file || ''); };
-var publicPath = function(file) { return path.join(__dirname, '../public', file || ''); };
-var dataPath = function(file)  { return path.join(__dirname, '../data', file || ''); };
+var paths = require('./paths'), templatePath = paths.templatePath, publicPath = paths.publicPath, dataPath = paths.dataPath;
 
 var bio = require(dataPath('bio'));
 var projects = require(dataPath('projects'));
