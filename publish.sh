@@ -10,3 +10,4 @@ git add -A .
 git commit -m 'Auto published'
 git push origin gh-pages -f
 git checkout master
+npm install
