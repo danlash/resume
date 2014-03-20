@@ -32,6 +32,7 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/highcharts.js"></script>
+    <script src="js/highcharts-more.js"></script>
     <script>
       $('#language-utilization').highcharts({
         chart: {
@@ -70,6 +71,7 @@
 
       $('#language-affinity').highcharts({
             chart: {
+                polar: true,
                 type: 'bar'
             },
             title: {
@@ -81,10 +83,10 @@
             yAxis: {
               labels: false,
               title: false,
-              max: 5
+              max: 10
             },
             credits: {
-                enabled: false
+              enabled: false
             },
             series: [{
                 name: 'Affinity',
@@ -92,7 +94,12 @@
             }, {
                 name: 'Proficiency',
                 data: [{{#each languages}}{{proficiency}}{{#unless @last}},{{/unless}}{{/each}}]
-            }]
+            }],
+            plotOptions: {
+               series: {
+                stacking: 'normal'
+              }
+            }
         });
     </script>
   </body>
