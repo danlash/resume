@@ -31,13 +31,13 @@
   },
   {
     "name"  :       "ASP.NET",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 4,
     "affinity"  :   2
   },
   {
     "name"  :       "ASP.NET MVC",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 4,
     "affinity"  :   5
   },
@@ -49,7 +49,7 @@
   },
   {
     "name"  :       "Backbone.js",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 4,
     "affinity"  :   5
   },
@@ -67,7 +67,7 @@
   },
   {
     "name"  :       "Rake",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 3,
     "affinity"  :   3
   },
@@ -97,19 +97,19 @@
   },
   {
     "name"  :       "MbUnit",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 4,
     "affinity"  :   2
   },
   {
     "name"  :       "Mocha",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 4,
     "affinity"  :   5
   },
   {
     "name"  :       "Chai",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 2,
     "affinity"  :   3
   },
@@ -133,7 +133,7 @@
   },
   {
     "name"  :       "Rhino Mocks",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 3,
     "affinity"  :   2
   },
@@ -169,13 +169,13 @@
   },
   {
     "name"  :       "Sammy.js",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 3,
     "affinity"  :   1
   },
   {
     "name"  :       "jQuery Templates",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 3,
     "affinity"  :   1
   },
@@ -211,7 +211,7 @@
   },
   {
     "name"  :       "Express.js",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 3,
     "affinity"  :   3
   },
@@ -223,7 +223,7 @@
   },
   {
     "name"  :       "Custom MVP",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 5,
     "affinity"  :   2
   },
@@ -246,13 +246,13 @@
   },
   {
     "name"  :       "WPF",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 1,
     "affinity"  :   1
   },
     {
     "name"  :       "Windows Forms",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 3,
     "affinity"  :   0
   },
@@ -270,7 +270,7 @@
   },
   {
     "name"  :       "DNN",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 3,
     "affinity"  :   1
   },
@@ -299,7 +299,7 @@
     "affinity"  :   2
   },  {
     "name"  :       "Jasmine",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 4,
     "affinity"  :   3
   },
@@ -317,7 +317,7 @@
   },
   {
     "name"  :       "WebKit",
-    "type"  :       "framework",
+    "type"  :       "library",
     "proficiency" : 1,
     "affinity"  :   1
   }
