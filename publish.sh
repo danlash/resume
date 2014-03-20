@@ -8,5 +8,5 @@ mv delete-me/public/* ./
 rm -rf delete-me
 git add -A .
 git commit -m 'Auto published'
-git push origin gh-pages
+git push origin gh-pages -f
 git checkout master
