@@ -1,5 +1,5 @@
 git checkout gh-pages
-git reset origin/master --hard
+git reset master --hard
 npm install
 npm run generate
 mkdir delete-me
