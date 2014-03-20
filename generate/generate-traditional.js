@@ -75,7 +75,6 @@ interests = _.pluck(interests, 'name').join(', ');
 
 
 var parser = new(less.Parser)({ paths: templatePath(), filename: 'graphs.less' });
-
 parser.parse(lessSource, function (err, tree) {
   if (err) throw err;
   var css = tree.toCSS({compress: true});

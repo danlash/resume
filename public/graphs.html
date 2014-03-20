@@ -36,6 +36,7 @@
       <div id="language-utilization"></div>
       <div id="language-affinity"></div>
       <div id="employment-duration"></div>
+      <div id="employment-happiness"></div>
     </main>
 
     <script src="js/jquery.js"></script>
@@ -204,6 +205,55 @@
             return this.series.name + ': ' + Math.floor(this.y / 12) + ' years ' + (this.y % 12) + ' months' ;
           }
         }
+      });
+
+      $('#employment-happiness').highcharts({
+        chart: {
+                type: 'areaspline'
+            },
+            title: {
+                text: 'Employment Feelings'
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'left',
+                verticalAlign: 'top',
+                x: 25,
+                y: 25,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor: '#FFFFFF'
+            },
+            xAxis: {
+              title: {
+                text: 'Time'
+              },
+              labels: {
+                enabled: false
+              },
+            },
+            yAxis: {
+              min: 0,
+              max: 6,
+              labels: {
+                enabled: false
+              },
+              title: {
+                text: ''
+              }
+            },
+            plotOptions: {
+                areaspline: {
+                    fillOpacity: 0.5
+                }
+            },
+            series: [{
+                name: 'Happiness',
+                data: [[new Date(2001-06-01), 2],[new Date(2002-02-01), 4],[new Date(2003-03-01), 5],[new Date(2005-05-01), 1],[new Date(2007-02-01), 3],[new Date(2007-03-01), 3],[new Date(2010-04-01), 5]]
+            }, {
+                name: 'Growth',
+                data: [[new Date(2001-06-01), 4],[new Date(2002-02-01), 4],[new Date(2003-03-01), 4],[new Date(2005-05-01), 3],[new Date(2007-02-01), 1],[new Date(2007-03-01), 2],[new Date(2010-04-01), 4]]
+            }]
       });
     </script>
   </body>

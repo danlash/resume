@@ -42,6 +42,15 @@ var averageEmploymentDurationMonths = Math.ceil(_.reduce(employers, function(cur
 var minEmploymentDurationMonths = Math.ceil(months(_.min(employers, function(employer){ return months(employer); })));
 var maxEmploymentDurationMonths = Math.ceil(months(_.max(employers, function(employer){ return months(employer); })));
 
+
+function sortAscending(collection) {
+  return _.sortBy(collection, function(item){
+    return (new Date(item.start)).toISOString();
+  });
+}
+
+var sortedEmployers = sortAscending(employers);
+
 var parser = new(less.Parser)({ paths: templatePath(), filename: 'graphs.less' });
 parser.parse(lessSource, function (err, tree) {
   if (err) throw err;
@@ -58,7 +67,8 @@ parser.parse(lessSource, function (err, tree) {
       average: averageEmploymentDurationMonths,
       min: minEmploymentDurationMonths,
       max: maxEmploymentDurationMonths
-    }
+    },
+    sortedEmployers: sortedEmployers
   };
 
   var result = template(data);

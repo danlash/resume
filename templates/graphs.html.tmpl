@@ -29,6 +29,7 @@
       <div id="language-utilization"></div>
       <div id="language-affinity"></div>
       <div id="employment-duration"></div>
+      <div id="employment-happiness"></div>
     </main>
 
     <script src="js/jquery.js"></script>
@@ -173,6 +174,55 @@
             return this.series.name + ': ' + Math.floor(this.y / 12) + ' years ' + (this.y % 12) + ' months' ;
           }
         }
+      });
+
+      $('#employment-happiness').highcharts({
+        chart: {
+                type: 'areaspline'
+            },
+            title: {
+                text: 'Employment Feelings'
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'left',
+                verticalAlign: 'top',
+                x: 25,
+                y: 25,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor: '#FFFFFF'
+            },
+            xAxis: {
+              title: {
+                text: 'Time'
+              },
+              labels: {
+                enabled: false
+              },
+            },
+            yAxis: {
+              min: 0,
+              max: 6,
+              labels: {
+                enabled: false
+              },
+              title: {
+                text: ''
+              }
+            },
+            plotOptions: {
+                areaspline: {
+                    fillOpacity: 0.5
+                }
+            },
+            series: [{
+                name: 'Happiness',
+                data: [{{#each sortedEmployers}}[new Date({{start}}), {{happiness}}]{{#unless @last}},{{/unless}}{{/each}}]
+            }, {
+                name: 'Growth',
+                data: [{{#each sortedEmployers}}[new Date({{start}}), {{growth}}]{{#unless @last}},{{/unless}}{{/each}}]
+            }]
       });
     </script>
   </body>
