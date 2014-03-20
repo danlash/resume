@@ -63,7 +63,7 @@
             name: 'Language Utilization',
             data: [ 
                   {{#each languageDistribution}}
-                    ['{{name}}', {{count}}]{{#unless @last}},{{/unless}}
+                    ['{{name}}', {{weightedCount}}]{{#unless @last}},{{/unless}}
                   {{/each}}
             ]
         }]

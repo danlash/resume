@@ -85,7 +85,7 @@
   },
   {
     "name"  :       "Handlebars",
-    "type"  :       "library",
+    "type"  :       "language",
     "proficiency" : 4,
     "affinity"  :   5
   },

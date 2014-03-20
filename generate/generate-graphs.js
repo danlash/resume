@@ -20,8 +20,11 @@ var languages = _.filter(technologies, function(technology){
 
 var languageDistribution = _.map(languages, function(language){
   var name = language.name;
-  var count = _.filter(projects, function(project){ return project.technologies.indexOf(language.name) >= 0; }).length;
-  return { name: name, count: count };
+  var projectsUsing = _.filter(projects, function(project){ return project.technologies.indexOf(language.name) >= 0; });
+  var count = projectsUsing.length;
+  var projectWeight = _.reduce(projectsUsing, function(total, project){ return project.size + total; }, 0);
+  var weightedCount = projectWeight * count;
+  return { name: name, count: count, weightedCount: weightedCount };
 });
 
 languageDistribution = _.sortBy(languageDistribution, function(language){ return language.count; });
