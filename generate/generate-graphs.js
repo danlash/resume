@@ -8,6 +8,7 @@ var paths = require('./paths'), templatePath = paths.templatePath, publicPath = 
 var bio = require(dataPath('bio'));
 var projects = require(dataPath('projects'));
 var technologies = require(dataPath('technologies'));
+var employers = require(dataPath('employers'));
 
 var lessSource = fs.readFileSync(templatePath('graphs.less')).toString();
 var htmlSource = fs.readFileSync(templatePath('graphs.html.tmpl')).toString();
@@ -29,8 +30,19 @@ var languageDistribution = _.map(languages, function(language){
 
 languageDistribution = _.sortBy(languageDistribution, function(language){ return language.count; });
 
-var parser = new(less.Parser)({ paths: templatePath(), filename: 'graphs.less' });
+var months = function(startStop) { 
+  var start = new Date(startStop.start);
+  var end = new Date(startStop.end);
+  var spanMilliseconds = end - start;
+  var months = spanMilliseconds / 1000 / 60 / 60 / 24 / 30;
+  return months;
+};
 
+var averageEmploymentDurationMonths = Math.ceil(_.reduce(employers, function(current, employer){ return current + months(employer); } ,0) / employers.length);
+var minEmploymentDurationMonths = Math.ceil(months(_.min(employers, function(employer){ return months(employer); })));
+var maxEmploymentDurationMonths = Math.ceil(months(_.max(employers, function(employer){ return months(employer); })));
+
+var parser = new(less.Parser)({ paths: templatePath(), filename: 'graphs.less' });
 parser.parse(lessSource, function (err, tree) {
   if (err) throw err;
   var css = tree.toCSS({compress: true});
@@ -41,7 +53,12 @@ parser.parse(lessSource, function (err, tree) {
   var data = { 
     bio: bio,
     languages: languages,
-    languageDistribution: languageDistribution
+    languageDistribution: languageDistribution,
+    employmentMonths: {
+      average: averageEmploymentDurationMonths,
+      min: minEmploymentDurationMonths,
+      max: maxEmploymentDurationMonths
+    }
   };
 
   var result = template(data);

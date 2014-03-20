@@ -5,11 +5,12 @@ var _ = require('underscore');
 
 var paths = require('./paths'), templatePath = paths.templatePath, publicPath = paths.publicPath, dataPath = paths.dataPath;
 
+var clone = function(json) { return JSON.parse(JSON.stringify(json)); };
 
 var bio = require(dataPath('bio.json'));
 var projects = require(dataPath('projects'));
 var technologies = require(dataPath('technologies'));
-var employers = require(dataPath('employers'));
+var employers = clone(require(dataPath('employers')));
 var degrees = require(dataPath('degrees'));
 var profiles = require(dataPath('profiles'));
 var interests = require(dataPath('interests'));

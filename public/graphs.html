@@ -35,6 +35,7 @@
     <main>
       <div id="language-utilization"></div>
       <div id="language-affinity"></div>
+      <div id="employment-duration"></div>
     </main>
 
     <script src="js/jquery.js"></script>
@@ -132,6 +133,78 @@
               }
             }
         });
+
+      $('#employment-duration').highcharts({
+
+        chart: {
+            type: 'gauge',
+            alignTicks: false
+        },
+    
+        title: {
+            text: 'Employment Duration'
+        },
+        
+        pane: {
+            startAngle: -135,
+            endAngle: 100
+        },   
+
+        yAxis: [{
+              min: 0,
+              max: (12 * 6),
+              lineColor: '#339',
+              tickColor: '#339',
+              minorTickColor: '#339',
+              offset: -25,
+              lineWidth: 2,
+              labels: false,
+              tickInterval: 12,
+              tickLength: 5,
+              minorTickInterval: 1,
+              minorTickLength: 5,
+              endOnTick: false
+          },  
+          {
+              min: 0,
+              max: 6,
+              tickPosition: 'outside',
+              lineColor: '#933',
+              lineWidth: 2,
+              minorTickPosition: 'outside',
+              tickColor: '#933',
+              minorTickColor: '#933',
+              tickLength: 5,
+              minorTickInterval: 0,
+              minorTickLength: 5,
+              labels: {
+                  distance: 12,
+                  rotation: 'auto'
+              },
+              offset: -20,
+        dataLabels: false,
+          }],
+        series: [{
+            name: 'Minimum',
+            data: [6],
+            dataLabels: false
+        },
+        {
+            name: 'Average',
+            data: [31],
+            dataLabels: false
+        },
+        {
+            name: 'Maximum',
+            data: [53],
+            dataLabels: false
+        }],
+        tooltip: {
+          formatter: function(){
+            return this.series.name + ': ' + Math.floor(this.y / 12) + ' years ' + (this.y % 12) + ' months' ;
+          }
+        }
+      });
     </script>
   </body>
 </html>
