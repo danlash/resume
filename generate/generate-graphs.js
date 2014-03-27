@@ -51,6 +51,10 @@ function sortAscending(collection) {
 
 var sortedEmployers = sortAscending(employers);
 
+var nonLanguages = _.filter(technologies, function(technology){
+    return technology.type !== 'language';
+  });
+
 var parser = new(less.Parser)({ paths: templatePath(), filename: 'graphs.less' });
 parser.parse(lessSource, function (err, tree) {
   if (err) throw err;
@@ -68,7 +72,8 @@ parser.parse(lessSource, function (err, tree) {
       min: minEmploymentDurationMonths,
       max: maxEmploymentDurationMonths
     },
-    sortedEmployers: sortedEmployers
+    sortedEmployers: sortedEmployers,
+    nonLanguages: nonLanguages
   };
 
   var result = template(data);

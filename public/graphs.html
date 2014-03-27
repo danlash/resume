@@ -37,6 +37,7 @@
       <div id="language-affinity"></div>
       <div id="employment-duration"></div>
       <div id="employment-happiness"></div>
+      <div id="technology-alignment"></div>
     </main>
 
     <script src="js/jquery.js"></script>
@@ -261,6 +262,73 @@
                 data: [[new Date(2001-06-01), 4],[new Date(2002-02-01), 4],[new Date(2003-03-01), 4],[new Date(2005-05-01), 3],[new Date(2007-02-01), 1],[new Date(2007-03-01), 2],[new Date(2010-04-01), 4]]
             }]
       });
+
+      $('#technology-alignment').highcharts({
+            chart: {
+                type: 'scatter',
+                zoomType: 'xy'
+            },
+            title: {
+                text: 'Technology Alignment'
+            },
+            legend: false,
+            xAxis: {
+                title: {
+                    enabled: true,
+                    text: 'Ability'
+                },
+                labels: {
+                  enabled: false
+                },
+                startOnTick: true,
+                endOnTick: true
+            },
+            yAxis: {
+                title: {
+                    text: 'Desire'
+                },
+                lineWidth: 1,
+                tickWidth: 1,
+                gridLineWidth: 0,
+                labels: {
+                  enabled: false
+                },
+                startOnTick: true,
+                endOnTick: true
+            },
+            plotOptions: {
+                scatter: {
+                    marker: {
+                        radius: 15,
+                        states: {
+                            hover: {
+                                enabled: true,
+                                lineColor: 'rgb(100,100,100)'
+                            }
+                        }
+                    },
+                    states: {
+                        hover: {
+                            marker: {
+                                enabled: false
+                            }
+                        }
+                    }
+                }
+            },
+            tooltip: {
+              formatter: function(){
+                //var group = $.filter(this.series.data, function(item) {
+                //  debugger
+                //});
+                return this.point.name;
+              }
+            },
+            series: [{
+                color: 'rgba(223, 83, 83, .5)',
+                data: [{ x:4, y:2, name: "ASP.NET" },{ x:4, y:5, name: "ASP.NET MVC" },{ x:5, y:4, name: "jQuery" },{ x:4, y:5, name: "Backbone.js" },{ x:4, y:5, name: "Node.js" },{ x:3, y:3, name: "Rake" },{ x:4, y:3, name: "Jenkins" },{ x:4, y:3, name: "SQL Server" },{ x:4, y:2, name: "MbUnit" },{ x:4, y:5, name: "Mocha" },{ x:2, y:3, name: "Chai" },{ x:5, y:3, name: "Visual Studio" },{ x:4, y:5, name: "Sublime Text" },{ x:4, y:5, name: "Git" },{ x:3, y:2, name: "Rhino Mocks" },{ x:5, y:4, name: "HipChat" },{ x:3, y:3, name: "Confluence" },{ x:4, y:5, name: "Github" },{ x:3, y:1, name: "Sammy.js" },{ x:3, y:1, name: "jQuery Templates" },{ x:2, y:4, name: "Socket.io" },{ x:1, y:0, name: "Salesforce" },{ x:2, y:2, name: "iisnode" },{ x:1, y:4, name: "RabbitMQ" },{ x:2, y:4, name: "Wit" },{ x:3, y:3, name: "Express.js" },{ x:2, y:3, name: "LAB.js" },{ x:5, y:2, name: "Custom MVP" },{ x:4, y:3, name: "Microsoft CRM" },{ x:3, y:1, name: "TFS" },{ x:1, y:1, name: "WPF" },{ x:3, y:0, name: "Windows Forms" },{ x:1, y:1, name: "Oracle" },{ x:3, y:2, name: "Outlook" },{ x:3, y:1, name: "DNN" },{ x:3, y:2, name: "Bowker" },{ x:4, y:5, name: "Barcode Scanner" },{ x:3, y:2, name: "MySQL" },{ x:4, y:3, name: "Jasmine" },{ x:2, y:1, name: "vBulletin" },{ x:1, y:1, name: "WebKit" },{ x:3, y:3, name: "Ninject" },{ x:2, y:1, name: "SOAP" },{ x:2, y:4, name: "Codesmith" },{ x:1, y:1, name: "XML Data Binding" },{ x:2, y:1, name: "Microsoft HTC/A" },{ x:4, y:2, name: "Custom ORM" },{ x:2, y:0, name: "Word Templates" },{ x:2, y:2, name: "High Speed Scanner" },{ x:4, y:3, name: "SVN" },{ x:2, y:2, name: "Blackberry Enterprise Server" },{ x:3, y:3, name: "Windows Services" },{ x:3, y:4, name: "jQuery UI" }]
+            }]
+          });
     </script>
   </body>
 </html>

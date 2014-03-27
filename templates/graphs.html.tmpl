@@ -30,6 +30,7 @@
       <div id="language-affinity"></div>
       <div id="employment-duration"></div>
       <div id="employment-happiness"></div>
+      <div id="technology-alignment"></div>
     </main>
 
     <script src="js/jquery.js"></script>
@@ -224,6 +225,73 @@
                 data: [{{#each sortedEmployers}}[new Date({{start}}), {{growth}}]{{#unless @last}},{{/unless}}{{/each}}]
             }]
       });
+
+      $('#technology-alignment').highcharts({
+            chart: {
+                type: 'scatter',
+                zoomType: 'xy'
+            },
+            title: {
+                text: 'Technology Alignment'
+            },
+            legend: false,
+            xAxis: {
+                title: {
+                    enabled: true,
+                    text: 'Ability'
+                },
+                labels: {
+                  enabled: false
+                },
+                startOnTick: true,
+                endOnTick: true
+            },
+            yAxis: {
+                title: {
+                    text: 'Desire'
+                },
+                lineWidth: 1,
+                tickWidth: 1,
+                gridLineWidth: 0,
+                labels: {
+                  enabled: false
+                },
+                startOnTick: true,
+                endOnTick: true
+            },
+            plotOptions: {
+                scatter: {
+                    marker: {
+                        radius: 15,
+                        states: {
+                            hover: {
+                                enabled: true,
+                                lineColor: 'rgb(100,100,100)'
+                            }
+                        }
+                    },
+                    states: {
+                        hover: {
+                            marker: {
+                                enabled: false
+                            }
+                        }
+                    }
+                }
+            },
+            tooltip: {
+              formatter: function(){
+                //var group = $.filter(this.series.data, function(item) {
+                //  debugger
+                //});
+                return this.point.name;
+              }
+            },
+            series: [{
+                color: 'rgba(223, 83, 83, .5)',
+                data: [{{#each nonLanguages}}{ x:{{proficiency}}, y:{{affinity}}, name: "{{name}}" }{{#unless @last}},{{/unless}}{{/each}}]
+            }]
+          });
     </script>
   </body>
 </html>
