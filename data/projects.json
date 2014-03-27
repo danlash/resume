@@ -4,7 +4,7 @@
     "employer" :      "VersionOne",
     "start" :         "2010-04-01",
     "end" :           "2014-04-01",
-    "technologies" :  ["C#", "ASP.NET", "ASP.NET MVC", "JavaScript", "jQuery", "Backbone.js", "Node.js", "HTML", "CSS", "LESS", "CoffeeScript", "Rake", "Ruby", "Jenkins", "Handlebars", "SQL Server", "MbUnit", "Mocha", "Chai", "Visual Studio", "Sublime Text", "Git", "Rhino Mocks", "HipChat", "XML", "Confluence", "Github"],
+    "technologies" :  ["C#", "ASP.NET", "ASP.NET MVC", "JavaScript", "jQuery", "Backbone.js", "Node.js", "HTML", "CSS", "LESS", "CoffeeScript", "Rake", "Ruby", "Jenkins", "Handlebars", "SQL Server", "MbUnit", "Mocha", "Chai", "Visual Studio", "Sublime Text", "Git", "Rhino Mocks", "HipChat", "XML", "Confluence", "Github", "jQuery UI"],
     "highlights"  :   [],
     "size":           4,
     "influence" :     3
@@ -86,7 +86,7 @@
     "employer" :      "BGM Collaboration / GreenStone",
     "start" :         "",
     "end" :           "",
-    "technologies" :  [],
+    "technologies" :  ["Ninject", "SQL Server", "VB.NET", "SOAP", "Codesmith", "JavaScript", "XML Data Binding", "Microsoft HTC/A", "HTML", "CSS", "TFS"],
     "highlights"  :   [],
     "size":           3,
     "influence" :     5
@@ -96,7 +96,7 @@
     "employer" :      "BGM Collaboration / GreenStone",
     "start" :         "",
     "end" :           "",
-    "technologies" :  [],
+    "technologies" :  ["SQL Server", "VB.NET", "JavaScript", "SOAP", "Codesmith", "XSLT", "XPath", "Microsoft CRM", "ASP.NET", "HTML", "CSS", "TFS"],
     "highlights"  :   [],
     "size":           5,
     "influence" :     2
@@ -106,17 +106,17 @@
     "employer" :      "BGM Collaboration / GreenStone",
     "start" :         "",
     "end" :           "",
-    "technologies" :  ["Custom MVP", "Microsoft CRM"],
+    "technologies" :  ["Custom MVP", "Microsoft CRM", "SOAP", "HTML", "CSS", "TFS", "VB.NET"],
     "highlights"  :   [],
     "size":           3,
     "influence" :     5
   },
   {
-    "name" :          "Time Collector?",
+    "name" :          "Time Tracker",
     "employer" :      "BGM Collaboration / GreenStone",
     "start" :         "",
     "end" :           "",
-    "technologies" :  ["TFS", "XAML", "WPF"],
+    "technologies" :  ["TFS", "XAML", "WPF", "C#"],
     "highlights"  :   [],
     "size":           3,
     "influence" :     5
@@ -126,7 +126,7 @@
     "employer" :      "BGM Collaboration / GreenStone",
     "start" :         "",
     "end" :           "",
-    "technologies" :  ["Barcode Scanner"],
+    "technologies" :  ["Barcode Scanner", "TFS", "HTML", "CSS", "JavaScript", "VB.NET"],
     "highlights"  :   [],
     "size":           2,
     "influence" :     5
@@ -136,7 +136,7 @@
     "employer" :      "Artemis Solutions Group",
     "start" :         "",
     "end" :           "",
-    "technologies" :  ["Windows Forms"],
+    "technologies" :  ["Windows Forms", "C#", "SQL Server", "Custom ORM", "Outlook", "Word Templates", "High Speed Scanner", "SVN"],
     "highlights"  :   [],
     "size":           4,
     "influence" :     2
@@ -146,7 +146,7 @@
     "employer" :      "Artemis Solutions Group",
     "start" :         "",
     "end" :           "",
-    "technologies" :  ["Oracle", "Outlook", "C#"],
+    "technologies" :  ["Oracle", "Outlook", "C#", "Blackberry Enterprise Server", "SVN", "Windows Services"],
     "highlights"  :   [],
     "size":           1,
     "influence" :     5
@@ -156,7 +156,7 @@
     "employer" :      "Artemis Solutions Group",
     "start" :         "",
     "end" :           "",
-    "technologies" :  ["DNN"],
+    "technologies" :  ["DNN", "C#", "SVN"],
     "highlights"  :   [],
     "size":           2,
     "influence" :     5
@@ -166,7 +166,7 @@
     "employer" :      "MATRIX",
     "start" :         "",
     "end" :           "",
-    "technologies" :  ["PHP", "Bowker", "HTML", "Barcode Scanner"],
+    "technologies" :  ["PHP", "Bowker", "HTML", "CSS", "Barcode Scanner", "MySQL", "SVN", "JavaScript"],
     "highlights"  :   [],
     "size":           4,
     "influence" :     5
@@ -176,7 +176,7 @@
     "employer" :      "BGM Collaboration / GreenStone",
     "start" :         "",
     "end" :           "",
-    "technologies" :  ["MySQL"],
+    "technologies" :  ["MySQL", "PHP", "HTML", "CSS"],
     "highlights"  :   [],
     "size":           2,
     "influence" :     4
@@ -186,7 +186,7 @@
     "employer" :      "StockAlerts.com",
     "start" :         "",
     "end" :           "",
-    "technologies" :  ["MySQL", "Python"],
+    "technologies" :  ["MySQL", "Python", "HTML", "CSS", "JavaScript"],
     "highlights"  :   [],
     "size":           4,
     "influence" :     1

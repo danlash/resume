@@ -320,5 +320,95 @@
     "type"  :       "library",
     "proficiency" : 1,
     "affinity"  :   1
+  },
+  {
+    "name"  :       "Ninject",
+    "type"  :       "library",
+    "proficiency" : 3,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "VB.NET",
+    "type"  :       "language",
+    "proficiency" : 4,
+    "affinity"  :   2
+  },
+  {
+    "name"  :       "SOAP",
+    "type"  :       "platform",
+    "proficiency" : 2,
+    "affinity"  :   1
+  },
+  {
+    "name"  :       "Codesmith",
+    "type"  :       "tool",
+    "proficiency" : 2,
+    "affinity"  :   4
+  },
+  {
+    "name"  :       "XML Data Binding",
+    "type"  :       "platform",
+    "proficiency" : 1,
+    "affinity"  :   1
+  },
+  {
+    "name"  :       "Microsoft HTC/A",
+    "type"  :       "platform",
+    "proficiency" : 2,
+    "affinity"  :   1
+  },
+  {
+    "name"  :       "XSLT",
+    "type"  :       "language",
+    "proficiency" : 3,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "XPath",
+    "type"  :       "language",
+    "proficiency" : 3,
+    "affinity"  :   2
+  },
+  {
+    "name"  :       "Custom ORM",
+    "type"  :       "library",
+    "proficiency" : 4,
+    "affinity"  :   2
+  },
+  {
+    "name"  :       "Word Templates",
+    "type"  :       "platform",
+    "proficiency" : 2,
+    "affinity"  :   0
+  },
+  {
+    "name"  :       "High Speed Scanner",
+    "type"  :       "integration",
+    "proficiency" : 2,
+    "affinity"  :   2
+  },
+  {
+    "name"  :       "SVN",
+    "type"  :       "tool",
+    "proficiency" : 4,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "Blackberry Enterprise Server",
+    "type"  :       "integration",
+    "proficiency" : 2,
+    "affinity"  :   2
+  },
+  {
+    "name"  :       "Windows Services",
+    "type"  :       "platform",
+    "proficiency" : 3,
+    "affinity"  :   3
+  },
+  {
+    "name"  :       "jQuery UI",
+    "type"  :       "library",
+    "proficiency" : 3,
+    "affinity"  :   4
   }
 ]
